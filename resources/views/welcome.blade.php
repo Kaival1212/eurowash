@@ -144,7 +144,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">
                 Why Choose Eurowash?
             </h2>
-            <div class="grid md:grid-cols-4 gap-6">
+            <div class="grid md:grid-cols-3 gap-6">
                 <div class="bg-blue-50 p-6 rounded-lg text-center">
                     <div
                         class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center"
@@ -223,7 +223,6 @@
                         Card, phone, or coin operated machines.
                     </p>
                 </div>
-                
             </div>
         </div>
     </section>
