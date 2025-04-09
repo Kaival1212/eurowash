@@ -23,6 +23,8 @@ class store extends Model
     public function lockers()
     {
         return $this->hasMany(Locker::class);
+        
     }
+
 
 }
