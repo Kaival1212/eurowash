@@ -2,6 +2,7 @@
 
 namespace App\Livewire\Auth;
 
+use App\Mail\WelcomeEmail;
 use App\Models\User;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
@@ -9,6 +10,8 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Livewire\Attributes\Layout;
 use Livewire\Component;
+use Illuminate\Support\Facades\Mail;
+
 
 #[Layout('components.layouts.auth')]
 class Register extends Component
@@ -19,6 +22,7 @@ class Register extends Component
 
     public string $password = '';
 
+    public string $phone = '';
     public string $password_confirmation = '';
 
     /**
@@ -29,6 +33,7 @@ class Register extends Component
         $validated = $this->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', 'unique:'.User::class],
+            'phone' => ['required', 'string', 'max:15'],
             'password' => ['required', 'string', 'confirmed', Rules\Password::defaults()],
         ]);
 
@@ -38,6 +43,8 @@ class Register extends Component
 
         Auth::login($user);
 
-        $this->redirect(route('dashboard', absolute: false), navigate: true);
+        Mail::to($user->email)->send(new WelcomeEmail($user));
+
+        $this->redirect(route('home'));
     }
 }

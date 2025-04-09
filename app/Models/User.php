@@ -22,6 +22,9 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'phone',
+        'role',
+        'store_id',
     ];
 
     /**
@@ -47,6 +50,16 @@ class User extends Authenticatable
         ];
     }
 
+    public function isEmployee(): bool
+    {
+        return $this->role === 'employee';
+    }
+
+    public function isAdmin(): bool
+    {
+        return $this->role === 'admin';
+    }
+
     /**
      * Get the user's initials
      */
@@ -57,4 +70,15 @@ class User extends Authenticatable
             ->map(fn (string $name) => Str::of($name)->substr(0, 1))
             ->implode('');
     }
+
+    public function lockers()
+    {
+        return $this->hasMany(LockerOrders::class);
+    }
+
+    public function store()
+    {
+        return $this->belongsTo(Store::class);
+    }
+
 }

@@ -1,105 +1,39 @@
-<x-layouts.app
-    title="Eurowash | 24/7/365 Launderette in Twickenham | Self-Service & Service Wash"
-    description="Eurowash Centre - Open 24/7/365 launderette in Twickenham offering self-service washing, service wash, and 24/24 laundry lockers. Visit us at 99 Whitton Rd, TW1 1BZ."
->
-    <header class="bg-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4">
-            <div class="flex justify-between items-center py-4">
-                <div class="flex items-center">
-                    <a href="/" class="flex items-center">
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-10 w-10 text-blue-600 mr-2"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"
-                            />
-                        </svg>
-                        <span class="text-2xl font-bold text-blue-800"
-                            >EUROWASH</span
-                        >
-                    </a>
-                </div>
-                <nav class="hidden md:flex space-x-8">
-                    <a
-                        href="#features"
-                        class="text-gray-700 hover:text-blue-600 font-medium"
-                        >Features</a
-                    >
-                    <a
-                        href="#services"
-                        class="text-gray-700 hover:text-blue-600 font-medium"
-                        >Services</a
-                    >
-                    <a
-                        href="#location"
-                        class="text-gray-700 hover:text-blue-600 font-medium"
-                        >Location</a
-                    >
-                    <a
-                        href="tel:02080793035"
-                        class="text-blue-600 font-bold hover:underline"
-                        >0208 079 3035</a
-                    >
-                </nav>
-                <div class="md:hidden">
-                    <button
-                        type="button"
-                        class="text-gray-700 hover:text-blue-600 focus:outline-none"
-                        id="mobile-menu-button"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="h-6 w-6"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                        >
-                            <path
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16"
-                            />
-                        </svg>
-                    </button>
-                </div>
+<!-- Hero Section -->
+<div>
+    @if(session('error'))
+    <div class="container mx-auto px-4 mt-6">
+        <div
+            class="flex items-center justify-between bg-red-100 border border-red-300 text-red-800 px-6 py-4 rounded-lg shadow-md"
+        >
+            <div class="flex items-center space-x-3">
+                <svg
+                    class="w-6 h-6 text-red-600"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 9v2m0 4h.01M5.455 4.545a9 9 0 0112.728 0m0 0a9 9 0 010 12.728m0 0a9 9 0 01-12.728 0m0 0a9 9 0 010-12.728"
+                    />
+                </svg>
+                <span class="text-lg font-semibold">{{
+                    session("error")
+                }}</span>
             </div>
+            <button
+                onclick="this.parentElement.remove()"
+                class="text-red-500 hover:text-red-700 text-xl font-bold"
+            >
+                &times;
+            </button>
         </div>
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="md:hidden hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 bg-gray-50">
-                <a
-                    href="#features"
-                    class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
-                    >Features</a
-                >
-                <a
-                    href="#services"
-                    class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
-                    >Services</a
-                >
-                <a
-                    href="#location"
-                    class="block px-3 py-2 text-gray-700 hover:bg-blue-50 hover:text-blue-600 rounded-md"
-                    >Location</a
-                >
-                <a
-                    href="tel:02080793035"
-                    class="block px-3 py-2 text-blue-600 font-bold hover:bg-blue-50 rounded-md"
-                    >0208 079 3035</a
-                >
-            </div>
-        </div>
-    </header>
+    </div>
+    @endif
 
-    <!-- Hero Section -->
     <section class="bg-blue-50">
         <div class="container mx-auto px-4 py-12">
             <div class="grid md:grid-cols-2 gap-8 items-center">
@@ -165,7 +99,7 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-blue-800">
-                        Open 24/7/365
+                        Open 24x7 365 Days
                     </h3>
                     <p class="text-gray-700">
                         Always open when you need us, even on holidays.
@@ -220,7 +154,7 @@
                         Contactless Payment
                     </h3>
                     <p class="text-gray-700">
-                        Card, phone, or coin operated machines.
+                        You can pay with coins, card, or contactless payment.
                     </p>
                 </div>
             </div>
@@ -279,7 +213,7 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Detergents available to purchase
+                            Detergents available to purchase in-store
                         </li>
                         <li class="flex items-center">
                             <svg
@@ -293,13 +227,13 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Perfect for duvets & large loads
+                            Perfect for all types of laundry.
                         </li>
                     </ul>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-bold mb-4 text-blue-800">
-                        24/24 Service Wash
+                        24/7 Service Wash
                     </h3>
                     <ul class="space-y-2 text-gray-700">
                         <li class="flex items-center">
@@ -330,20 +264,7 @@
                             </svg>
                             24-hour turnaround
                         </li>
-                        <!-- <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Attended by nSimba Mon-Fri 10am-2pm
-                        </li> -->
+
                         <li class="flex items-center">
                             <svg
                                 class="h-5 w-5 text-blue-600 mr-2"
@@ -358,8 +279,24 @@
                             </svg>
                             Family wash, duvets, football kits
                         </li>
+
+                        <li class="flex items-center">
+                            <svg
+                                class="h-5 w-5 text-blue-600 mr-2"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
+                            Call us for more information
+                        </li>
                     </ul>
                 </div>
+
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <h3 class="text-xl font-bold mb-4 text-blue-800">
                         24/7 Laundry Lockers
@@ -391,7 +328,7 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Collect within 24 hours
+                            Ready for collection within 24 hours
                         </li>
                         <li class="flex items-center">
                             <svg
@@ -405,7 +342,7 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Secure locker system
+                            Pay online and collect at your convenience
                         </li>
                         <li class="flex items-center">
                             <svg
@@ -445,12 +382,12 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-xl font-bold text-blue-800">
-                                Drop Off
+                                Book a Locker Online
                             </h3>
                             <p class="mt-1 text-gray-700">
-                                Drop off your washing at any time that suits you
-                                into one of our in-store 24/7/365 LAUNDRY
-                                LOCKERS.
+                                Reserve your locker through our online platform.
+                                You will receive a confirmation email containing
+                                your unique locker code.
                             </p>
                         </div>
                     </div>
@@ -465,12 +402,12 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-xl font-bold text-blue-800">
-                                We Do The Work
+                                Drop Off Your Laundry
                             </h3>
                             <p class="mt-1 text-gray-700">
-                                Our team will wash, dry, and fold your laundry
-                                within 24 hours. For self-service, use our
-                                high-quality machines at your convenience.
+                                Place your laundry inside the assigned locker
+                                and secure it using the code provided in the
+                                confirmation email.
                             </p>
                         </div>
                     </div>
@@ -485,17 +422,66 @@
                         </div>
                         <div class="ml-4">
                             <h3 class="text-xl font-bold text-blue-800">
-                                Pick Up
+                                Professional Laundry Service
                             </h3>
                             <p class="mt-1 text-gray-700">
-                                Collect your clean, fresh laundry from the same
-                                locker at any time that suits you within 24
-                                hours.
+                                Our dedicated team will wash, dry, and neatly
+                                fold your garments within 24 hours before
+                                returning them to the same locker.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                            >
+                                4
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-blue-800">
+                                Make a Payment
+                            </h3>
+                            <p class="mt-1 text-gray-700">
+                                Once your laundry is ready, you will receive an
+                                email with a secure link to complete your
+                                payment online.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div
+                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                            >
+                                5
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-blue-800">
+                                Collect Your Laundry
+                            </h3>
+                            <p class="mt-1 text-gray-700">
+                                Upon successful payment, you will receive an
+                                email with the updated locker code. Use it to
+                                retrieve your freshly laundered items at your
+                                convenience.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <a
+                href="{{ route('lockers' , ['slug' => 'eurowash']) }}"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                >Book Now</a
+            >
         </div>
     </section>
 
@@ -561,128 +547,4 @@
             </div>
         </div>
     </section>
-
-    <!-- Footer -->
-    <footer class="bg-blue-800 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8">
-                <div>
-                    <h3 class="text-xl font-bold mb-4">EUROWASH CENTRE</h3>
-                    <p class="mb-2">Open 24/7/365 Since 1996</p>
-                    <p>The premium launderette experience in Twickenham.</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li>
-                            <a
-                                href="#features"
-                                class="hover:text-blue-300 transition duration-300"
-                                >Features</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#services"
-                                class="hover:text-blue-300 transition duration-300"
-                                >Services</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="#location"
-                                class="hover:text-blue-300 transition duration-300"
-                                >Location</a
-                            >
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                    <ul class="space-y-2">
-                        <li class="flex items-center">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 mr-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-                                />
-                            </svg>
-                            <a
-                                href="tel:02080793035"
-                                class="hover:text-blue-300 transition duration-300"
-                                >0208 079 3035</a
-                            >
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 mr-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-                                />
-                            </svg>
-                            <a
-                                href="mailto:eurowashcentre@gmail.com"
-                                class="hover:text-blue-300 transition duration-300"
-                                >eurowashcentre@gmail.com</a
-                            >
-                        </li>
-                        <li class="flex items-start">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="h-5 w-5 mr-2 mt-1"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
-                                />
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
-                                />
-                            </svg>
-                            <address class="not-italic">
-                                99 Whitton Road<br />
-                                Twickenham<br />
-                                TW1 1BZ
-                            </address>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Opening Hours</h3>
-                    <p class="mb-4">
-                        Open 24 hours a day, 7 days a week, 365 days a year.
-                    </p>
-                    <p class="mb-2">Attended Service:</p>
-                    <p>Monday to Friday: 10am - 2pm</p>
-                </div>
-            </div>
-            <div class="border-t border-blue-700 mt-8 pt-8 text-center">
-                <p>&copy; 2025 Eurowash Centre. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</x-layouts.app>
+</div>
