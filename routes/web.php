@@ -14,13 +14,14 @@ use Stripe\Webhook;
 use App\Livewire\UserBookings;
 use App\Mail\PaymentSucessGiveCode;
 use App\Models\LockerOrders;
+use App\Models\store;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    $store = \App\Models\Store::where('name', 'Eurowash')->firstOrFail();
+    $store = store::where('name', 'Eurowash')->firstOrFail();
     return view('eurowash', compact('store'));
 })->name('home');
 
