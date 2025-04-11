@@ -106,6 +106,39 @@
             }
         </script>
 
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "FAQPage",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Is Eurowash open 24/7?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, Eurowash Centre is open 24 hours a day, 7 days a week."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Where is Eurowash located?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "We are located at 123 London Road, SW1A 1AA, London."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Do you offer self-service and staff service?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Yes, we offer both 24/7 self-service washing machines and full-service laundry options."
+                        }
+                    }
+                ]
+            }
+        </script>
+
         @vite(['resources/css/app.css']) @livewireStyles
     </head>
 
