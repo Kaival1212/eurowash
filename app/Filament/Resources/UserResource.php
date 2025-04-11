@@ -42,7 +42,7 @@ class UserResource extends Resource
                     ->relationship('store', 'name')
                     ->preload()
                     ->searchable()
-                    ->required(),
+                    //->required(),
 
             ]);
     }

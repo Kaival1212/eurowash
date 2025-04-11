@@ -71,6 +71,41 @@
             rel="stylesheet"
         />
 
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Laundromat",
+                "name": "Eurowash Centre",
+                "image": "https://eurowash.knconsulting.uk/storage/unnamed.jpg",
+                "url": "https://eurowash.knconsulting.uk",
+                "telephone": "+44 1234 567890",
+                "priceRange": "£",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 London Road",
+                    "addressLocality": "London",
+                    "postalCode": "SW1A 1AA",
+                    "addressCountry": "GB"
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday",
+                            "Saturday",
+                            "Sunday"
+                        ],
+                        "opens": "00:00",
+                        "closes": "23:59"
+                    }
+                ]
+            }
+        </script>
+
         @vite(['resources/css/app.css']) @livewireStyles
     </head>
 

@@ -19,27 +19,59 @@
 
         <meta name="robots" content="{{ $robots }}" />
 
-        <!-- Optional: Open Graph Tags -->
+        <!-- Favicons -->
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="{{ asset('favicon.ico') }}"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="{{ asset('favicon-96x96.png') }}"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="{{ asset('favicon.svg') }}"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="{{ asset('apple-touch-icon.png') }}"
+        />
+        <link rel="manifest" href="{{ asset('site.webmanifest') }}" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Open Graph / Facebook -->
         <meta property="og:title" content="{{ $title }}" />
         <meta property="og:description" content="{{ $description }}" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="{{ url()->current() }}" />
         <meta
             property="og:image"
-            content="{{ asset('images/seo-default.jpg') }}"
+            content="{{ asset('web-app-manifest-512x512.png') }}"
         />
 
-        <!-- Optional: Twitter Card -->
+        <!-- Twitter -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="{{ $title }}" />
         <meta name="twitter:description" content="{{ $description }}" />
+        <meta
+            name="twitter:image"
+            content="{{ asset('web-app-manifest-512x512.png') }}"
+        />
 
+        <!-- AlpineJS & Fonts -->
+        <script src="//unpkg.com/alpinejs" defer></script>
         <link rel="preconnect" href="https://fonts.bunny.net" />
         <link
             href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap"
             rel="stylesheet"
         />
-        @vite(['resources/css/app.css'])
+
+        @vite(['resources/css/app.css']) @livewireStyles
     </head>
 
     <body class="min-h-screen flex flex-col bg-gray-50">
@@ -53,7 +85,6 @@
 
         <!-- Footer -->
         <x-eurowash-footer />
-
         @livewireScripts @fluxScripts
     </body>
 </html>
