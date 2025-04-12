@@ -20,11 +20,6 @@
                 New Locker Order Received
             </h2>
 
-            <p style="font-size: 16px; color: #4b5563; margin-bottom: 20px">
-                A new locker order has been placed at
-                <strong>{{ $store->name }}</strong> and requires attention.
-            </p>
-
             <div
                 style="
                     background-color: #e0f2fe;
@@ -48,11 +43,15 @@
                     <strong>Customer:</strong>
                     {{ $order->name ?? $user->name ?? 'Customer' }}<br />
                     <strong>Booking ID:</strong> #{{ $order->id }}<br />
-                    <strong>Locker Number:</strong> {{ $locker->locker_number
+                    <strong>Locker Number:</strong>
+                    {{ $locker->locker_number
+
                     }}<br />
                     <strong>Date & Time:</strong>
                     {{ $order->created_at->format('d M Y, H:i') }}<br />
-                    <strong>Before Code:</strong> {{ $order->before_code
+                    <strong>Before Code:</strong>
+                    {{ $order->before_code
+
                     }}<br />
                 </p>
             </div>
