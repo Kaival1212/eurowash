@@ -42,7 +42,11 @@
                         EUROWASH CENTRE
                     </h1>
                     <p class="mt-4 text-xl font-semibold text-blue-600">
-                        OPEN 24/7 Since 1996 - We Never Close!
+                        OPEN 24/7 - We Never Close!
+                        <br />
+                        Open since 1960s
+                        <br />
+                        Ben has run it since 1996
                     </p>
                     <p class="mt-2 text-gray-700 text-lg">
                         The go-to launderette in SW London with quality
