@@ -19,10 +19,12 @@ class mailToEmploye extends Mailable
      */
 
      public $order;
+     public $locker;
 
     public function __construct(LockerOrders $order)
     {
         $this->order = $order;
+        $this->locker = $order->locker;
     }
 
 
