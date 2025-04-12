@@ -46,11 +46,13 @@
                     <strong>Locker Number:</strong>
                     {{ $locker->locker_number
 
+
                     }}<br />
                     <strong>Date & Time:</strong>
                     {{ $order->created_at->format('d M Y, H:i') }}<br />
                     <strong>Before Code:</strong>
                     {{ $order->before_code
+
 
                     }}<br />
                 </p>
@@ -97,23 +99,6 @@
                 within <strong>1 hour</strong> of receiving their confirmation
                 email.
             </p>
-
-            <div style="text-align: center; margin: 30px 0">
-                <a
-                    href="{{ route('admin.orders.show', ['order' => $order->id]) }}"
-                    style="
-                        background-color: #2563eb;
-                        color: #ffffff;
-                        padding: 12px 24px;
-                        border-radius: 6px;
-                        text-decoration: none;
-                        font-weight: bold;
-                        display: inline-block;
-                    "
-                >
-                    View Order Details
-                </a>
-            </div>
         </div>
 
         <div
