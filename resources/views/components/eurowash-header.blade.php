@@ -74,13 +74,6 @@
                         </flux:menu.item>
                         @endif
 
-                        <flux:menu.item
-                            icon="calendar"
-                            href="{{ route('user.bookings') }}"
-                        >
-                            My Bookings
-                        </flux:menu.item>
-
                         <flux:menu.separator />
 
                         <form method="POST" action="{{ route('logout') }}">
@@ -140,13 +133,6 @@
                             Dashboard
                         </flux:menu.item>
                         @endif
-
-                        <flux:menu.item
-                            icon="calendar"
-                            href="{{ route('user.bookings') }}"
-                        >
-                            My Bookings
-                        </flux:menu.item>
 
                         <flux:menu.separator />
 
