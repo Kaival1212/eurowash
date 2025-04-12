@@ -20,7 +20,6 @@ class LockerOrders extends Model
 
     protected $fillable = [
         'locker_id',
-        'user_id',
         'name',
         'email',
         'phone',

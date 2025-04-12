@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
+use App\Mail\mailToEmploye;
 use App\Mail\PendingOrder;
 use App\Models\LockerOrders;
+use App\Models\User;
 use Illuminate\Support\Facades\Mail;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
@@ -24,12 +26,6 @@ class LockerBooking extends Component
         $this->locker = \App\Models\Locker::find($locker);
         $this->store = $this->locker->store;
 
-        $user = auth()->user();
-        if ($user) {
-            $this->name = $user->name;
-            $this->email = $user->email;
-            $this->phone = $user->phone;
-        }
     }
 
     public function saveBooking()
@@ -43,7 +39,7 @@ class LockerBooking extends Component
 
        $order =  LockerOrders::create([
             'locker_id' => $this->locker->id,
-            'user_id' => auth()->user() ? auth()->user()->id : null,
+            //'user_id' => auth()->user() ? auth()->user()->id : null,
             'name' => $this->name,
             'email' => $this->email,
             'phone' => $this->phone,
@@ -66,11 +62,14 @@ class LockerBooking extends Component
 
         Mail::to($this->email)->send(new PendingOrder($order , $this->name , $this->locker));
         // mail to the emaployee as well
-
+        $employees = User::where('role', 'employee')->get();
+        foreach ($employees as $employee) {
+            Mail::to($employee->email)->send(new mailToEmploye($order));
+        }
 
         session()->flash('success', 'Locker booked successfully!');
 
-     return redirect(route("user.bookings"))->with('success', 'Locker booked successfully!');
+     return redirect(route("user.order" , ["orderID" => $order->id] ))->with('success', 'Locker booked successfully!');
 
     }
 

@@ -11,65 +11,70 @@ class LockerOrdersPolicy
     /**
      * Determine whether the user can view any models.
      */
-    public function viewAny(User $user): bool
+    public function viewAny(?User $user): bool
     {
-        return $user->isAdmin() || $user->isEmployee();
+        return $user?->isAdmin() || $user?->isEmployee();
     }
 
     /**
      * Determine whether the user can view the model.
      */
-    public function view(User $user, LockerOrders $lockerOrders): bool
+    public function view(?User $user, LockerOrders $lockerOrders): bool
     {
-        if ($user->isAdmin() || $user->isEmployee()) {
+        // Admins and employees can view any order
+        if ($user?->isAdmin() || $user?->isEmployee()) {
             return true;
         }
 
-        // Customers can only update their own order and NOT price/status/after_code
-        if ($user->id !== $lockerOrders->user_id) {
-            return false;
+        // Authenticated customers can view their own orders
+        if ($user && $user->id === $lockerOrders->user_id) {
+            return true;
         }
 
-        return true;
+        // Guests can't view any order directly
+        return false;
     }
 
     /**
      * Determine whether the user can create models.
      */
-    public function create(User $user): bool
+    public function create(?User $user): bool
     {
-        return false;
+        // Allow both guests and authenticated users to create orders
+        return true;
     }
 
     /**
      * Determine whether the user can update the model.
      */
-    public function update(User $user, LockerOrders $lockerOrders): bool
+    public function update(?User $user, LockerOrders $lockerOrders): bool
     {
-    if ($user->isAdmin() || $user->isEmployee()) {
-        return true;
-    }
+        // Admins and employees can update any order
+        if ($user?->isAdmin() || $user?->isEmployee()) {
+            return true;
+        }
 
-    if ($user->id !== $lockerOrders->user_id) {
+        // Authenticated users can update their own orders
+        if ($user && $user->id === $lockerOrders->user_id) {
+            return true;
+        }
+
+        // Guests cannot update orders
         return false;
-    }
-
-    return true;
-
     }
 
     /**
      * Determine whether the user can delete the model.
      */
-    public function delete(User $user, LockerOrders $lockerOrders): bool
+    public function delete(?User $user, LockerOrders $lockerOrders): bool
     {
-        return $user->isAdmin() || $user->isEmployee();
+        return $user?->isAdmin() || $user?->isEmployee();
     }
 
     /**
      * Determine whether the user can restore the model.
      */
-    public function restore(User $user, LockerOrders $lockerOrders): bool
+    public function restore(?User $user, LockerOrders $lockerOrders): bool
     {
         return false;
     }
@@ -77,7 +82,7 @@ class LockerOrdersPolicy
     /**
      * Determine whether the user can permanently delete the model.
      */
-    public function forceDelete(User $user, LockerOrders $lockerOrders): bool
+    public function forceDelete(?User $user, LockerOrders $lockerOrders): bool
     {
         return false;
     }

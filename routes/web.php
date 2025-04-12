@@ -34,11 +34,11 @@ Route::middleware(['auth' , 'Employee'])->group(
     }
 );
 
-Route::get('/{slug}/lockers' , Lockers::class)
+Route::get('/store/{slug}/smart-lockers' , Lockers::class)
     ->name('lockers');
 
 Route::get('/{slug}/lockers/book/{locker}', LockerBooking::class)
-->middleware(middleware: ['auth' , 'lockerInUse'])
+->middleware(middleware: ['lockerInUse'])
 ->name('lockers.book');
 
 
@@ -60,7 +60,6 @@ Route::middleware(['auth'])->group(function () {
 
 
 Route::get('/order/{orderID}' , UserOrder::class)
-->middleware(['auth'])
 ->name('user.order');
 
 Route::post('/stripe/webhook', function (Request $request) {

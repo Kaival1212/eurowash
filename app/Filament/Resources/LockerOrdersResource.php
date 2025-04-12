@@ -30,12 +30,6 @@ class LockerOrdersResource extends Resource
                 ->searchable()
                 ->required(),
 
-                Forms\Components\Select::make('user_id')
-                    ->relationship('user', 'name')
-                    ->getOptionLabelFromRecordUsing(fn ($record) => $record->name . ' - ' . $record->email)
-                    ->preload()
-                    ->searchable()
-                    ->required(),
 
                 Forms\Components\TextInput::make('name'),
                 Forms\Components\TextInput::make('email')

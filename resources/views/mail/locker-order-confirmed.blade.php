@@ -27,7 +27,10 @@
             </p>
 
             <p style="font-size: 16px; color: #4b5563; margin-bottom: 20px">
-                <strong>Locker Number:</strong> {{ $locker->locker_number
+                <strong>Locker Number:</strong>
+                {{ $locker->locker_number
+
+
                 }}<br />
                 <strong>Before Code:</strong> {{ $order->before_code }}<br />
                 <strong>Booking ID:</strong> #{{ $order->id }}<br />
@@ -60,7 +63,7 @@
 
             <div style="text-align: center; margin: 30px 0">
                 <a
-                    href="{{ route('home') }}"
+                    href="{{ route('user.order' , ['orderID' => $order->id]) }}"
                     style="
                         background-color: #2563eb;
                         color: #ffffff;

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('locker_orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('locker_id')->constrained()->onDelete('cascade');
-            $table->foreignId('user_id')->constrained()->nullable()->onDelete('cascade');
+            //$table->foreignId('user_id')->constrained()->nullable()->onDelete('cascade');
             $table->string("name")->nullable();
             $table->string("email")->nullable();
             $table->string("phone")->nullable();
