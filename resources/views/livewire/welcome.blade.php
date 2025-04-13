@@ -36,41 +36,104 @@
 
     <section class="bg-blue-50">
         <div class="container mx-auto px-4 py-12">
-            <div class="grid md:grid-cols-2 gap-8 items-center">
-                <div>
-                    <h1 class="text-4xl md:text-5xl font-bold text-blue-800">
-                        EUROWASH CENTRE
-                    </h1>
-                    <p class="mt-4 text-xl font-semibold text-blue-600">
-                        OPEN 24/7 - We Never Close!
-                        <br />
-                        Open since 1960s
-                        <br />
-                        Ben has run it since 1996
-                    </p>
-                    <p class="mt-2 text-gray-700 text-lg">
-                        The go-to launderette in SW London with quality
-                        equipment and premium ambience.
-                    </p>
-                    <div class="mt-6 flex flex-wrap gap-4">
+            <div
+                class="grid md:grid-cols-2 gap-8 items-center bg-gray-50 rounded-2xl overflow-hidden shadow-lg"
+            >
+                <div class="py-12 px-8 max-w-5xl mx-auto text-center">
+                    <div class="mb-8">
+                        <h1
+                            class="text-4xl md:text-5xl font-bold text-blue-800 leading-tight"
+                        >
+                            EUROWASH <span class="inline-block">24 7 365</span>
+                        </h1>
+                        <div
+                            class="w-24 h-1 bg-blue-600 mx-auto mt-4 mb-6 rounded-full"
+                        ></div>
+                        <p
+                            class="mt-4 text-xl font-semibold text-blue-600 leading-relaxed"
+                        >
+                            OPEN 24 HOURS A DAY, 7 DAYS A WEEK, 365 DAYS A YEAR.
+                            <span class="block mt-1">— We Never Close!</span>
+                        </p>
+                        <p class="text-blue-600 italic mt-1">
+                            Established in the 1960s
+                        </p>
+                    </div>
+
+                    <div class="space-y-4">
+                        <p class="text-lg text-blue-600 font-medium">
+                            The current owners have been providing modern-day
+                            machines for your washing and drying needs since
+                            1996.
+                        </p>
+
+                        <p class="text-gray-700 text-lg leading-relaxed">
+                            The first 24-hour self-service launderette in South
+                            West London (and now also offering service washes)
+                            with modern equipment in a safe and clean
+                            environment — motivated by positive affirmations and
+                            quotes for customers to reflect upon whilst waiting
+                            for their laundry.
+                        </p>
+                    </div>
+
+                    <div class="mt-8 flex flex-wrap justify-center gap-4">
                         <a
                             href="#services"
-                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
-                            >Our Services</a
+                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-md flex items-center justify-center"
                         >
+                            <span>Our Services</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 ml-2"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                        </a>
                         <a
                             href="#location"
-                            class="bg-white border-2 border-blue-600 hover:bg-blue-50 text-blue-600 font-bold py-3 px-6 rounded-lg transition duration-300"
-                            >Find Us</a
+                            class="bg-white border-2 border-blue-600 hover:bg-blue-50 text-blue-600 font-bold py-3 px-8 rounded-lg transition duration-300 shadow-md flex items-center justify-center"
                         >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="h-5 w-5 mr-2"
+                                viewBox="0 0 20 20"
+                                fill="currentColor"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                    clip-rule="evenodd"
+                                />
+                            </svg>
+                            <span>Find Us</span>
+                        </a>
                     </div>
                 </div>
-                <div class="rounded-xl overflow-hidden shadow-xl">
-                    <img
-                        src="{{ asset('storage/unnamed.jpg') }}"
-                        alt="Eurowash Launderette Interior"
-                        class="w-full h-auto"
-                    />
+
+                <div class="h-full">
+                    <div
+                        class="h-full rounded-l-xl overflow-hidden shadow-xl relative"
+                    >
+                        <img
+                            src="{{ asset('storage/unnamed.jpg') }}"
+                            alt="Eurowash Launderette Interior"
+                            class="w-full h-full object-cover"
+                        />
+                        <div
+                            class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-800 to-transparent opacity-70 py-4 px-6"
+                        >
+                            <p class="text-white font-bold text-lg">
+                                Modern Equipment &amp; Clean Environment
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -82,7 +145,7 @@
             <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">
                 Why Choose Eurowash?
             </h2>
-            <div class="grid md:grid-cols-3 gap-6">
+            <div class="grid md:grid-cols-4 gap-6">
                 <div class="bg-blue-50 p-6 rounded-lg text-center">
                     <div
                         class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center"
@@ -103,10 +166,11 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-blue-800">
-                        Open 24x7 365 Days
+                        Open 24/7 365 Days
                     </h3>
                     <p class="text-gray-700">
-                        Always open when you need us, even on holidays.
+                        Always open when you need us, even on bank holidays and
+                        RFU event days
                     </p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg text-center">
@@ -132,7 +196,8 @@
                         Modern Equipment
                     </h3>
                     <p class="text-gray-700">
-                        Brand new machines including 21KG Super Spin.
+                        Brand new machines and payment systems inspired by
+                        morden day technology.
                     </p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-lg text-center">
@@ -155,10 +220,40 @@
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2 text-blue-800">
-                        Contactless Payment
+                        Cash and Cashless Payment
                     </h3>
                     <p class="text-gray-700">
-                        You can pay with coins, card, or contactless payment.
+                        You can pay with card or contactless payment as well as
+                        coins(and customers can even exchanges bank notes for
+                        coins).
+                    </p>
+                </div>
+
+                <div class="bg-blue-50 p-6 rounded-lg text-center">
+                    <div
+                        class="w-16 h-16 mx-auto mb-4 bg-blue-100 rounded-full flex items-center justify-center"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-8 w-8 text-blue-600"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M5 3v18M19 3v18M9 6h6M9 10h6M9 14h6M6 19h12M6 3h12"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2 text-blue-800">
+                        Vending Machines
+                    </h3>
+                    <p class="text-gray-700">
+                        Hot & Cold drinks, confectionary available by card, bank
+                        notes or coins
                     </p>
                 </div>
             </div>
@@ -203,6 +298,20 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
+                            Perfect for all types of laundry.
+                        </li>
+                        <li class="flex items-center">
+                            <svg
+                                class="h-5 w-5 text-blue-600 mr-2"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd"
+                                ></path>
+                            </svg>
                             High-speed, efficient drying
                         </li>
                         <li class="flex items-center">
@@ -231,7 +340,8 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Perfect for all types of laundry.
+                            Books and thought provoking quotes to read whilist
+                            you wait
                         </li>
                     </ul>
                 </div>
@@ -281,7 +391,7 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Family wash, duvets, football kits
+                            Family wash, duvets.
                         </li>
 
                         <li class="flex items-center">
@@ -296,7 +406,7 @@
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Call us for more information
+                            Wash all type of sports gear.
                         </li>
                     </ul>
                 </div>
@@ -371,24 +481,33 @@
     <!-- How It Works Section -->
     <section class="py-12 bg-white">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">
-                How It Works
-            </h2>
+            <div class="text-center mb-12">
+                <h2
+                    class="text-4xl font-bold text-blue-800 relative inline-block underline"
+                >
+                    Smart Laundry Lockers
+                </h2>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+                    Convenient, secure, and contactless laundry service at your
+                    fingertips
+                </p>
+            </div>
+
             <div class="max-w-3xl mx-auto">
-                <div class="space-y-6">
+                <div class="space-y-8">
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
                             >
                                 1
                             </div>
                         </div>
-                        <div class="ml-4">
+                        <div class="ml-5">
                             <h3 class="text-xl font-bold text-blue-800">
                                 Book a Locker Online
                             </h3>
-                            <p class="mt-1 text-gray-700">
+                            <p class="mt-2 text-gray-700">
                                 Reserve your locker through our online platform.
                                 You will receive a confirmation email containing
                                 your unique locker code.
@@ -399,16 +518,16 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
                             >
                                 2
                             </div>
                         </div>
-                        <div class="ml-4">
+                        <div class="ml-5">
                             <h3 class="text-xl font-bold text-blue-800">
                                 Drop Off Your Laundry
                             </h3>
-                            <p class="mt-1 text-gray-700">
+                            <p class="mt-2 text-gray-700">
                                 Place your laundry inside the assigned locker
                                 and secure it using the code provided in the
                                 confirmation email.
@@ -419,16 +538,16 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
                             >
                                 3
                             </div>
                         </div>
-                        <div class="ml-4">
+                        <div class="ml-5">
                             <h3 class="text-xl font-bold text-blue-800">
                                 Professional Laundry Service
                             </h3>
-                            <p class="mt-1 text-gray-700">
+                            <p class="mt-2 text-gray-700">
                                 Our dedicated team will wash, dry, and neatly
                                 fold your garments within 24 hours before
                                 returning them to the same locker.
@@ -439,16 +558,16 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
                             >
                                 4
                             </div>
                         </div>
-                        <div class="ml-4">
+                        <div class="ml-5">
                             <h3 class="text-xl font-bold text-blue-800">
                                 Make a Payment
                             </h3>
-                            <p class="mt-1 text-gray-700">
+                            <p class="mt-2 text-gray-700">
                                 Once your laundry is ready, you will receive an
                                 email with a secure link to complete your
                                 payment online.
@@ -459,20 +578,20 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-10 h-10 rounded-full bg-blue-600 text-white font-bold"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
                             >
                                 5
                             </div>
                         </div>
-                        <div class="ml-4">
+                        <div class="ml-5">
                             <h3 class="text-xl font-bold text-blue-800">
                                 Collect Your Laundry
                             </h3>
-                            <p class="mt-1 text-gray-700">
+                            <p class="mt-2 text-gray-700">
                                 Upon successful payment, you will receive an
                                 email with the updated locker code. Use it to
-                                retrieve your freshly laundered items at your
-                                convenience.
+                                retrieve your freshly washed and dried clothes
+                                at your convenience.
                             </p>
                         </div>
                     </div>
@@ -480,10 +599,10 @@
             </div>
         </div>
 
-        <div class="flex justify-center mt-8">
+        <div class="flex justify-center mt-10">
             <a
-                href="{{ route('lockers' , ['slug' => 'eurowash']) }}"
-                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+                href="#"
+                class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-md"
                 >Book Now</a
             >
         </div>
@@ -512,8 +631,17 @@
                         </h3>
                         <p class="text-gray-700 mb-4">
                             Conveniently located between Twickenham Station and
-                            the A316, near the world famous RFU Rugby Ground
+                            the A316, near the world famous RFU Rugby Stadium
                             with plenty of parking nearby.
+                        </p>
+
+                        <p class="text-gray-700 mb-4">
+                            Serving customers from Hampton, Kingston,
+                            Twickenham, St. Margarets, Whitton, Hounslow,
+                            Staines, Southall, Hayes, and all of the London
+                            Boroughs including Richmond, Hammersmith & Fulham,
+                            Kensington & Chelsea, Southwark, Merton, Hounslow,
+                            Hillingdon and Ealing
                         </p>
 
                         <h3 class="text-xl font-bold mb-4 text-blue-800">
