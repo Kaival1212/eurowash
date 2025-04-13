@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string("phone")->nullable();
             $table->decimal("price")->nullable();
             $table->enum("payment", ["pending", "paid", "failed"])->default("pending");
-            $table->string("payment_link")->nullable();
+            $table->text("payment_link")->nullable();
             $table->string("payment_id")->nullable();
             $table->string("invoice_link")->nullable();
             $table->enum("status", ["pending", "confirmed", "completed" , "cancelled"])->default("pending");
