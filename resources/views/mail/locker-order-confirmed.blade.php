@@ -31,6 +31,7 @@
                 {{ $locker->locker_number
 
 
+
                 }}<br />
                 <strong>Before Code:</strong> {{ $order->before_code }}<br />
                 <strong>Booking ID:</strong> #{{ $order->id }}<br />
@@ -57,7 +58,7 @@
                 "
             >
                 ⚠️ Please make sure to drop off your laundry within
-                <strong>1 hour</strong> of receiving this email, or the locker
+                <strong>12 hour</strong> of receiving this email, or the locker
                 may be released for others.
             </p>
 

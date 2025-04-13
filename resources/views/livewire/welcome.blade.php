@@ -261,218 +261,308 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-12 bg-gray-50" id="services">
+    <section class="py-16 bg-gray-50" id="services">
         <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-12 text-blue-800">
-                Our Services
-            </h2>
+            <div class="text-center mb-16">
+                <h2
+                    class="text-4xl font-bold text-blue-800 relative inline-block underline"
+                >
+                    Our Services
+                </h2>
+                <p class="mt-6 text-gray-600 max-w-2xl mx-auto">
+                    Professional laundry solutions available 24/7/365 to suit
+                    your busy lifestyle
+                </p>
+            </div>
+
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4 text-blue-800">
-                        Self-Service Wash & Dry
-                    </h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
+                <!-- Self-Service Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-8">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+                        >
                             <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
+                                class="h-8 w-8 text-blue-600"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                             >
                                 <path
                                     fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    d="M5 4a3 3 0 00-3 3v6a3 3 0 003 3h10a3 3 0 003-3V7a3 3 0 00-3-3H5zm11 3a1 1 0 00-1-1H5a1 1 0 00-1 1v6a1 1 0 001 1h10a1 1 0 001-1V7z"
                                     clip-rule="evenodd"
                                 ></path>
-                            </svg>
-                            Range of machine sizes available
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
                                 <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
+                                    d="M7 9a1 1 0 011-1h4a1 1 0 110 2H8a1 1 0 01-1-1z"
                                 ></path>
                             </svg>
-                            Perfect for all types of laundry.
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            High-speed, efficient drying
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Detergents available to purchase in-store
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Books and thought provoking quotes to read whilist
-                            you wait
-                        </li>
-                    </ul>
-                </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4 text-blue-800">
-                        24/7 Service Wash
-                    </h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Wash, dry & fold service
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            24-hour turnaround
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Family wash, duvets.
-                        </li>
-
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Wash all type of sports gear.
-                        </li>
-                    </ul>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold mb-4 text-blue-800 text-center"
+                        >
+                            Self-Service Wash &amp; Dry
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 mt-6">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Range of machine sizes available</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Perfect for all types of laundry</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>High-speed, efficient drying</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span
+                                    >Detergents available to purchase
+                                    in-store</span
+                                >
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span
+                                    >Books and thought provoking quotes to read
+                                    whilst you wait</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-bold mb-4 text-blue-800">
-                        24/7 Laundry Lockers
-                    </h3>
-                    <ul class="space-y-2 text-gray-700">
-                        <li class="flex items-center">
+                <!-- 24/7 Service Wash Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-8">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+                        >
                             <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
+                                class="h-8 w-8 text-blue-600"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                             >
                                 <path
                                     fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Drop off anytime
-                        </li>
-                        <li class="flex items-center">
+                        </div>
+                        <h3
+                            class="text-2xl font-bold mb-4 text-blue-800 text-center"
+                        >
+                            24/7 Service Wash
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 mt-6">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Wash, dry &amp; fold service</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>24-hour turnaround</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Family wash, duvets</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Wash all type of sports gear</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 24/7 Laundry Lockers Card -->
+                <div
+                    class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-1"
+                >
+                    <div class="bg-blue-600 h-2"></div>
+                    <div class="p-8">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6 mx-auto"
+                        >
                             <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
+                                class="h-8 w-8 text-blue-600"
                                 fill="currentColor"
                                 viewBox="0 0 20 20"
                             >
                                 <path
                                     fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
                                     clip-rule="evenodd"
                                 ></path>
                             </svg>
-                            Ready for collection within 24 hours
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Pay online and collect at your convenience
-                        </li>
-                        <li class="flex items-center">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mr-2"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                ></path>
-                            </svg>
-                            Convenient for busy lifestyles
-                        </li>
-                    </ul>
+                        </div>
+                        <h3
+                            class="text-2xl font-bold mb-4 text-blue-800 text-center"
+                        >
+                            24/7 Laundry Lockers
+                        </h3>
+                        <ul class="space-y-3 text-gray-700 mt-6">
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Drop off anytime</span>
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span
+                                    >Ready for collection within 24 hours</span
+                                >
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span
+                                    >Pay online and collect at your
+                                    convenience</span
+                                >
+                            </li>
+                            <li class="flex items-center">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mr-3 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    ></path>
+                                </svg>
+                                <span>Convenient for busy lifestyles</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -601,7 +691,7 @@
 
         <div class="flex justify-center mt-10">
             <a
-                href="#"
+                href="{{ route('lockers' , ['slug' => 'eurowash']) }}"
                 class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 shadow-md"
                 >Book Now</a
             >
