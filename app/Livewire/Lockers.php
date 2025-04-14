@@ -33,11 +33,10 @@ class Lockers extends Component
 
     }
 
-    #[Layout('components.layouts.smartLocker', [
+    #[Layout('components.layouts.app', [
         'title' => 'Smart Lockers at Eurowash – 24/7 Laundry Locker Booking in Twickenham',
         'description' => 'Book a smart laundry locker at Eurowash Twickenham. Convenient 24/7 drop-off and pick-up service with secure, contactless access. No account required.',
         'keywords' => 'smart laundry lockers, Eurowash smart lockers, 24/7 laundry service, locker booking Twickenham, contactless laundry Twickenham, laundry locker system',
-        'canonical' => 'https://eurowash.co.uk/smart-lockers',
         'robots' => 'index, follow'
     ])]
 

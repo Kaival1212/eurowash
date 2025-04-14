@@ -37,6 +37,10 @@ Route::middleware(['auth' , 'Employee'])->group(
 Route::get('/store/{slug}/smart-lockers' , Lockers::class)
     ->name('lockers');
 
+
+Route::get('/store/eurowash/smart-lockers' , Lockers::class)
+->name('eurowash.lockers');
+
 Route::get('/{slug}/lockers/book/{locker}', LockerBooking::class)
 ->middleware(middleware: ['lockerInUse'])
 ->name('lockers.book');
