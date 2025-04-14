@@ -142,7 +142,7 @@
         @vite(['resources/css/app.css']) @livewireStyles
     </head>
 
-    <body class="min-h-screen flex flex-col bg-gray-50">
+    <body class="bg-gray-50 text-gray-800 scroll-smooth antialiased">
         <!-- Header -->
         <x-eurowash-header />
 

@@ -2,17 +2,14 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
             <!-- Logo -->
-            <a
-                href="{{ route('home') }}"
-                class="flex items-center space-x-3 justify-center"
-            >
+            <a href="{{ route('home') }}" class="flex items-center space-x-3">
                 <img
                     src="{{ asset('storage/TitleLogo.png') }}"
                     alt="Eurowash Logo"
-                    class="h-32 w-auto md:h-18"
+                    class="h-20 w-auto"
                 />
                 <span
-                    class="text-xl sm:text-2xl font-extrabold text-blue-800 tracking-wide hidden md:block"
+                    class="text-xl sm:text-2xl font-extrabold text-blue-800 hidden md:block"
                 >
                     EUROWASH 24 7 365
                 </span>
@@ -44,14 +41,8 @@
                     0208 079 3035
                 </a>
 
-                @guest
-                <a
-                    href="{{ route('login') }}"
-                    class="text-gray-700 hover:text-blue-600 transition"
-                >
-                    Login
-                </a>
-                @else
+                @auth @if (Auth::user()->isEmployee() ||
+                Auth::user()->isAdmin())
                 <flux:dropdown>
                     <flux:button icon:trailing="chevron-down">
                         {{ Auth::user()->name }}
@@ -82,7 +73,7 @@
                         </form>
                     </flux:menu>
                 </flux:dropdown>
-                @endguest
+                @endif @endauth
             </nav>
 
             <!-- Mobile Menu -->
@@ -138,11 +129,8 @@
                                 Logout
                             </flux:menu.item>
                         </form>
-                        @endauth @guest
-                        <flux:menu.item href="{{ route('login') }}">
-                            Login
-                        </flux:menu.item>
-                        @endguest
+                        @endif
+                        {{-- No login/signup for public users --}}
                     </flux:menu>
                 </flux:dropdown>
             </div>

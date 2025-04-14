@@ -97,10 +97,7 @@ Route::post('/stripe/webhook', function (Request $request) {
             $order->invoice_link = $session->invoice_url;
             $order->save();
 
-
-            // Send email to user
-            $user = \App\Models\User::find($order->user_id);
-            Mail::to($user->email)->send(new PaymentSucessGiveCode($order , $user , $order->locker));
+            Mail::to($order->email)->send(new PaymentSucessGiveCode($order , $order->name , $order->locker));
         }
     }
 

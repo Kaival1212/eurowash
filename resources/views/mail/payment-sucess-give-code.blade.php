@@ -20,11 +20,11 @@
                 Payment Successful 💸
             </h2>
             <p style="font-size: 16px; color: #4b5563; margin-bottom: 20px">
-                Hi {{ $user->name }},
+                Hi {{ $user }},
             </p>
             <p style="font-size: 16px; color: #4b5563; margin-bottom: 20px">
                 Thank you for using <strong>Eurowash</strong>. We've received
-                your payment for your locker 
+                your payment for your locker
                 <strong>#{{ $locker->locker_number }}</strong
                 >.
             </p>

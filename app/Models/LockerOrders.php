@@ -114,7 +114,7 @@ class LockerOrders extends Model
             }
 
             if ($order->isDirty('payment') && $order->payment === 'paid') {
-                ReleaseLocker::dispatch($order)->delay(now()->addSeconds(5));
+                ReleaseLocker::dispatch($order)->delay(now()->addHour());
             }
 
 
