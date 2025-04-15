@@ -50,7 +50,7 @@
                         EUROWASH 24 7 365 IS A SELF-SERVICE LAUNDERETTE, OPEN 24
                         HOURS A DAY, 7 DAYS A WEEK, 365 DAYS A YEAR!
                     </p>
-                    <p class="text-blue-600 italic mt-2">
+                    <!-- <p class="text-blue-600 italic mt-2">
                         Established in the 1960s
                     </p>
 
@@ -68,7 +68,7 @@
                             quotes for customers to reflect upon whilst waiting
                             for their laundry.
                         </p>
-                    </div>
+                    </div> -->
 
                     <div
                         class="mt-8 flex flex-wrap gap-4 justify-center md:justify-start"
@@ -132,174 +132,161 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-20 bg-white border" id="services">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16">
-                <h2
-                    class="text-4xl font-bold text-blue-800 inline-block underline"
-                >
+    <section class="py-16 md:py-24 bg-white" id="services">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-3">
                     Our Services
                 </h2>
-                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+                <div
+                    class="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-6"
+                ></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
                     Eurowash 24 7 365 is a clean, safe and friendly self-service
                     launderette; monitored by CCTV and personal attendance.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-10">
-                <!-- Card Template -->
+                <!-- Self-Service Laundry Card -->
                 <div
-                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 border-t-4 border-blue-600 p-8"
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1 overflow-hidden"
                 >
-                    <div
-                        class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                    >
-                        <svg
-                            class="h-8 w-8 text-blue-600"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="{{ asset('storage/download.png') }}"
+                            alt="Self-Service Laundry Machines"
+                            class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                        />
                     </div>
-                    <h3
-                        class="text-2xl font-bold text-blue-800 text-center mb-4"
-                    >
-                        24-7-365 Self-Service Laundry
-                    </h3>
-                    <ul class="space-y-3 text-gray-700 text-base">
-                        @foreach([ 'Easy to operate Washing Machines and Tumble
-                        Dryers', 'Machine and Dryers accept coins, card any
-                        payments from contactless devices', 'Washing Machines
-                        range form handling up to 14kg, 20kg and 22kg loads',
-                        'Tumble Dryers range from handling up to 13.5kg and
-                        20kg', 'Machines are therefore suitable for all types of
-                        laundry; whether it be commercial or domestic',
-                        "Machines are set to 'high spin', thereby being the most
-                        effcient and cost effective", 'Detergents available to
-                        purchase in-store', 'Books and thought provoking quotes
-                        to read whilst you wait!' ] as $feature)
-                        <li class="flex items-start gap-3">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>{{ $feature }}</span>
-                        </li>
-                        @endforeach
-                    </ul>
+                    <div class="p-6 md:p-8 border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            24-7-365 Self-Service Laundry
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            @foreach([ 'Easy to operate Washing Machines and
+                            Tumble Dryers', 'Machine and Dryers accept coins,
+                            card any payments from contactless devices',
+                            'Washing Machines range form handling up to 14kg,
+                            20kg and 22kg loads', 'Tumble Dryers range from
+                            handling up to 13.5kg and 20kg', 'Machines are
+                            therefore suitable for all types of laundry; whether
+                            it be commercial or domestic', "Machines are set to
+                            'high spin', thereby being the most effcient and
+                            cost effective", 'Detergents available to purchase
+                            in-store', 'Books and thought provoking quotes to
+                            read whilst you wait!' ] as $feature)
+                            <li class="flex items-start gap-2">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                                <span>{{ $feature }}</span>
+                            </li>
+                            @endforeach
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- 24-Hour Service Washes Card -->
                 <div
-                    class="bg-white rounded-3xl shadow-md hover:shadow-xl transition-transform hover:-translate-y-1 border-t-4 border-blue-600 p-8"
+                    class="bg-white rounded-xl shadow-lg hover:shadow-xl transition-transform hover:-translate-y-1 overflow-hidden"
                 >
-                    <div
-                        class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
-                    >
-                        <svg
-                            class="h-8 w-8 text-blue-600"
-                            fill="currentColor"
-                            viewBox="0 0 20 20"
-                        >
-                            <path
-                                fill-rule="evenodd"
-                                d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
-                                clip-rule="evenodd"
-                            />
-                        </svg>
+                    <div class="h-48 overflow-hidden">
+                        <img
+                            src="{{ asset('storage/servicewash.jpeg') }}"
+                            alt="Professional Laundry Service"
+                            class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                        />
                     </div>
-                    <h3
-                        class="text-2xl font-bold text-blue-800 text-center mb-4"
-                    >
-                        24-Hour Service Washes
-                    </h3>
-                    <ul class="space-y-3 text-gray-700 text-base">
-                        <li class="flex items-start gap-3">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span
-                                >Wash, Dry and fold by our professional
-                                team,24-hour turnaround</span
-                            >
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>
-                                Hassle free - just 'drop and collect' via our
-                                <a
-                                    href="{{ route('eurowash.lockers') }}"
-                                    class="text-blue-600 underline font-medium"
+                    <div class="p-6 md:p-8 border-t-4 border-blue-600">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                            24-Hour Service Washes
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start gap-2">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
                                 >
-                                    24-7 Smart Laundry Lockers (please click to
-                                    book)
-                                </a>
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>
-                                Suitable for all types of laundry; whether it be
-                                commercial (including all types of sports gear)
-                                or domectic (including a simple family wash or
-                                duvets)
-                            </span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <svg
-                                class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
-                                fill="currentColor"
-                                viewBox="0 0 20 20"
-                            >
-                                <path
-                                    fill-rule="evenodd"
-                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                                    clip-rule="evenodd"
-                                />
-                            </svg>
-                            <span>Convenient for busy lifestyles</span>
-                        </li>
-                    </ul>
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                                <span
+                                    >Wash, Dry and fold by our professional
+                                    team, 24-hour turnaround</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                                <span>
+                                    Hassle free - just 'drop and collect' via
+                                    our
+                                    <a
+                                        href="{{ route('eurowash.lockers') }}"
+                                        class="text-blue-600 hover:text-blue-800 font-medium"
+                                    >
+                                        24-7 Smart Laundry Lockers (please click
+                                        to book)
+                                    </a>
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                                <span>
+                                    Suitable for all types of laundry; whether
+                                    it be commercial (including all types of
+                                    sports gear) or domectic (including a simple
+                                    family wash or duvets)
+                                </span>
+                            </li>
+                            <li class="flex items-start gap-2">
+                                <svg
+                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"
+                                    />
+                                </svg>
+                                <span>Convenient for busy lifestyles</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,7 +299,7 @@
                 <h2
                     class="text-4xl font-bold text-blue-800 inline-block underline"
                 >
-                    Unique Selling Points – Why Choose Eurowash 24 7 365
+                    Why Choose Eurowash 24 7 365
                 </h2>
             </div>
 
@@ -528,47 +515,74 @@
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-4">
-            <div class="max-w-5xl mx-auto text-center">
-                <h2
-                    class="text-4xl font-bold text-blue-800 mb-6 underline decoration-2"
-                >
+    <section id="about" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-3">
                     About Us
                 </h2>
+                <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
             </div>
 
-            <div
-                class="bg-white rounded-3xl shadow-lg border p-10 max-w-5xl mx-auto"
-            >
-                <div class="space-y-8 text-gray-700 text-lg leading-relaxed">
-                    <div>
-                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">
-                            The History
-                        </h3>
-                        <p>
-                            Eurowash was established in the 1960s and the
-                            current owners have been providing gas, water and
-                            electric for the local community’s washing and
-                            drying needs since 1996.
-                        </p>
+            <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+                <!-- Info Panel -->
+                <div
+                    class="bg-white p-6 md:p-10 rounded-2xl shadow-lg border border-gray-100 transform transition duration-300 hover:shadow-xl"
+                >
+                    <div class="space-y-6 text-gray-700">
+                        <div>
+                            <h3
+                                class="text-xl font-semibold text-blue-700 mb-3"
+                            >
+                                Our Heritage
+                            </h3>
+                            <p class="leading-relaxed">
+                                Eurowash was established in the 1960s and the
+                                current owners have been providing gas, water,
+                                and electric for the local community's washing
+                                and drying needs since 1996.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3
+                                class="text-xl font-semibold text-blue-700 mb-3"
+                            >
+                                Modern Innovation
+                            </h3>
+                            <p class="leading-relaxed">
+                                Eurowash 24 7 365 is the first 24-hour
+                                self-service launderette in South West London.
+                                The owners have embraced modern technology to
+                                serve your needs — upgrading machines for higher
+                                capacity and better quality, supporting
+                                contactless/card payments, and extending opening
+                                hours so you can wash and dry any time, day or
+                                night.
+                            </p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-semibold text-blue-800 mb-2">
-                            The Present
-                        </h3>
-                        <p>
-                            Eurowash 24 7 365 is the first 24 hour self-service
-                            launderette in South West London. The owners have
-                            embraced and utilised modern day technology in order
-                            to serve and provide for your diverse needs whether
-                            it be by upgrading machines for a bigger capacity,
-                            increased quality and cost effective wash and dry,
-                            implementing modern day payment systems to
-                            accommodate contactless / card pay and extending
-                            opening hours to 24 hours a day, 365 days a year so
-                            you can ‘wash and dry around the clock’.
-                        </p>
+                </div>
+
+                <!-- Video Panel -->
+                <div
+                    class="rounded-2xl overflow-hidden shadow-lg h-full w-full transform transition duration-300 hover:shadow-xl group"
+                >
+                    <div class="relative h-full w-full">
+                        <video
+                            class="w-full h-full object-cover"
+                            autoplay
+                            muted
+                            loop
+                            playsinline
+                        >
+                            <source
+                                src="{{ asset('storage/EuroWashVideo.mp4') }}"
+                                type="video/mp4"
+                            />
+                            Your browser does not support the video tag.
+                        </video>
+                        <!-- Optional Video Overlay -->
                     </div>
                 </div>
             </div>
@@ -671,7 +685,7 @@
     </section>
 
     <!-- How It Works Section -->
-    <section class="py-12 bg-white">
+    <section class="py-12 bg-white" id="howitworks">
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2
