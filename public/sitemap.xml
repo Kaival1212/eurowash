@@ -1,19 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+
+    <!-- Home page -->
     <url>
-    <loc>https://eurowash-web.test</loc>
-    <priority>1.0</priority>
-            </url>
+        <loc>https://eurowash-web.test</loc>
+        <priority>1.0</priority>
+        <lastmod>2025-05-25</lastmod> <!-- Example last modification date -->
+    </url>
+
+    <!-- About Us page -->
     <url>
-    <loc>https://eurowash-web.test/about</loc>
-    <priority>0.8</priority>
-            </url>
+        <loc>https://eurowash-web.test/about</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- Contact page -->
     <url>
-    <loc>https://eurowash-web.test/contact</loc>
-    <priority>0.8</priority>
-            </url>
+        <loc>https://eurowash-web.test/contact</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- Services page -->
     <url>
-    <loc>https://eurowash-web.test/services</loc>
-    <priority>0.8</priority>
-            </url>
+        <loc>https://eurowash-web.test/services</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- Features page -->
+    <url>
+        <loc>https://eurowash-web.test/features</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- Location page -->
+    <url>
+        <loc>https://eurowash-web.test/location</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- How It Works page -->
+    <url>
+        <loc>https://eurowash-web.test/howitworks</loc>
+        <priority>0.8</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
+    <!-- Locker Booking page -->
+    <url>
+        <loc>https://eurowash-web.test/store/eurowash/smart-lockers</loc>
+        <priority>0.7</priority>
+        <lastmod>2025-05-25</lastmod>
+    </url>
+
 </urlset>

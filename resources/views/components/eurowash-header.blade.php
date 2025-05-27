@@ -1,4 +1,11 @@
 <header class="bg-white shadow-md sticky top-0 z-50">
+    <!-- Announcement Bar -->
+    <div class="bg-blue-600 text-white text-center py-2 text-sm sm:text-base">
+        <span
+            >🚨 Launching Our Smart Locker Service on June 1st! 🎉 All orders on
+            that day will get 25% off! 🚨</span
+        >
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center py-4">
             <!-- Logo -->
@@ -23,31 +30,31 @@
                 class="hidden md:flex items-center space-x-8 text-base lg:text-lg font-bold tracking-wide text-blue-800"
             >
                 <a
-                    href="{{ route('home') . '#features' }}"
+                    href="{{ route('features') }}"
                     class="text-gray-700 hover:text-blue-600 transition"
                 >
                     Features
                 </a>
                 <a
-                    href="{{ route('home') . '#services' }}"
+                    href="{{ route('services') }}"
                     class="text-gray-700 hover:text-blue-600 transition"
                 >
                     Services
                 </a>
                 <a
-                    href="{{ route('home') . '#location' }}"
+                    href="{{ route('location') }}"
                     class="text-gray-700 hover:text-blue-600 transition"
                 >
                     Location
                 </a>
                 <a
-                    href="{{ route('home') . '#about' }}"
+                    href="{{ route('about') }}"
                     class="text-gray-700 hover:text-blue-600 transition"
                 >
                     About Us
                 </a>
                 <a
-                    href="{{ route('home') . '#howitworks' }}"
+                    href="{{ route('howitworks') }}"
                     class="text-gray-700 hover:text-blue-600 transition"
                 >
                     How It Works
@@ -116,22 +123,28 @@
                     <flux:button>Menu</flux:button>
                     <flux:menu class="text-sm">
                         <a
-                            href="{{ route('home') . '#features' }}"
+                            href="{{ route('features') }}"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-100"
                         >
                             Features
                         </a>
                         <a
-                            href="{{ route('home') . '#services' }}"
+                            href="{{ route('services') }}"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-100"
                         >
                             Services
                         </a>
                         <a
-                            href="{{ route('home') . '#location' }}"
+                            href="{{ route('location') }}"
                             class="block px-4 py-2 text-gray-700 hover:bg-blue-100"
                         >
                             Location
+                        </a>
+                        <a
+                            href="{{ route('howitworks') }}"
+                            class="block px-4 py-2 text-gray-700 hover:bg-blue-100"
+                        >
+                            How It Works
                         </a>
                         <a
                             href="tel:02080793035"

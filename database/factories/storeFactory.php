@@ -31,7 +31,7 @@ class StoreFactory extends Factory
             'mapsUrl' => 'https://maps.app.goo.gl/GfvqPK7rjGgypdJp8',
 
             // SEO fields
-            'seoTitle' => 'Eurowash | 24/7/365 Launderette in Twickenham | Self-Service & Service Wash',
+            'seoTitle' => 'Eurowashs | 24/7/365 Launderette in Twickenham | Self-Service & Service Wash',
             'seoDescription' => 'Open 24/7/365, Eurowash in Twickenham offers self-service, service wash, and 24/7 laundry lockers. Visit 99 Whitton Road TW1 1BZ.',
             'seoKeyword' => 'laundry, launderette, 24/7 wash, Twickenham laundry, service wash, self-service',
 

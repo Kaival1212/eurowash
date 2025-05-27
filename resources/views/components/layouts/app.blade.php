@@ -71,10 +71,16 @@
             rel="stylesheet"
         />
 
+        <script
+            src="https://elevenlabs.io/convai-widget/index.js"
+            async
+            type="text/javascript"
+        ></script>
+
         <script type="application/ld+json">
             {
                 "@context": "https://schema.org",
-                "@type": "Laundromat",
+                "@type": "LocalBusiness",
                 "name": "Eurowash Centre",
                 "image": "https://eurowash.knconsulting.uk/storage/unnamed.jpg",
                 "url": "https://eurowash.knconsulting.uk",
@@ -149,6 +155,9 @@
         <!-- Main Content -->
         <main class="flex-grow">
             {{ $slot }}
+            <elevenlabs-convai
+                agent-id="agent_01jw1x0zt3fjhrkjfnt6j1be7e"
+            ></elevenlabs-convai>
         </main>
 
         <!-- Footer -->

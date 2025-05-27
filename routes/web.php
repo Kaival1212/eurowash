@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\AboutUs;
 use App\Livewire\EmployeeDashboard;
 use App\Livewire\LockerBooking;
 use App\Livewire\Lockers;
@@ -15,16 +16,36 @@ use App\Livewire\UserBookings;
 use App\Mail\PaymentSucessGiveCode;
 use App\Models\LockerOrders;
 use App\Models\store;
+use App\Livewire\Features;
+use App\Livewire\HowItWorks;
+use App\Livewire\Location;
+use App\Livewire\Services;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 
 use Illuminate\Support\Facades\Route;
+use Stripe\Entitlements\Feature;
 
 Route::get('/', function () {
     $store = store::where('name', 'Eurowash')->firstOrFail();
     return view('eurowash', compact('store'));
 })->name('home');
 
+Route::get('/features', Features::class)
+    ->name('features');
+
+Route::get('/services', Services::class)
+    ->name('services');
+
+Route::get('/location', Location::class)
+    ->name('location');
+
+Route::get('/about', AboutUs::class)
+    ->name('about');
+
+    #howitworks
+Route::get('/howitworks', HowItWorks::class)
+    ->name('howitworks');
 
 Route::middleware(['auth' , 'Employee'])->group(
     function(){
