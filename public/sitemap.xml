@@ -7,56 +7,56 @@
 
     <!-- Home page -->
     <url>
-        <loc>https://eurowash-web.test</loc>
+        <loc>https://eurowashlaunderette.com</loc>
         <priority>1.0</priority>
         <lastmod>2025-05-25</lastmod> <!-- Example last modification date -->
     </url>
 
     <!-- About Us page -->
     <url>
-        <loc>https://eurowash-web.test/about</loc>
+        <loc>https://eurowashlaunderette.com/about</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- Contact page -->
     <url>
-        <loc>https://eurowash-web.test/contact</loc>
+        <loc>https://eurowashlaunderette.com/contact</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- Services page -->
     <url>
-        <loc>https://eurowash-web.test/services</loc>
+        <loc>https://eurowashlaunderette.com/services</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- Features page -->
     <url>
-        <loc>https://eurowash-web.test/features</loc>
+        <loc>https://eurowashlaunderette.com/features</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- Location page -->
     <url>
-        <loc>https://eurowash-web.test/location</loc>
+        <loc>https://eurowashlaunderette.com/location</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- How It Works page -->
     <url>
-        <loc>https://eurowash-web.test/howitworks</loc>
+        <loc>https://eurowashlaunderette.com/howitworks</loc>
         <priority>0.8</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
 
     <!-- Locker Booking page -->
     <url>
-        <loc>https://eurowash-web.test/store/eurowash/smart-lockers</loc>
+        <loc>https://eurowashlaunderette.com/store/eurowash/smart-lockers</loc>
         <priority>0.7</priority>
         <lastmod>2025-05-25</lastmod>
     </url>
