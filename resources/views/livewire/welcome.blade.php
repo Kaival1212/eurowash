@@ -40,22 +40,22 @@
                 class="grid md:grid-cols-2 gap-8 items-center bg-white rounded-3xl shadow-xl overflow-hidden"
             >
                 <div class="p-10">
-                    <h1 class="text-5xl font-bold text-blue-800 leading-snug">
+                    <h1 class="text-5xl font-bold text-[color:var(--color-eurowash)] leading-snug">
                         EUROWASH <span class="block">24 7 365</span>
                     </h1>
-                    <div class="w-24 h-1 bg-blue-600 my-6 rounded-full"></div>
+                    <div class="w-24 h-1 bg-[color:var(--color-eurowash)] my-6 rounded-full"></div>
                     <p
-                        class="text-xl font-semibold text-blue-600 leading-relaxed"
+                        class="text-xl font-semibold text-[color:var(--color-eurowash)] leading-relaxed"
                     >
-                        EUROWASH 24 7 365 IS A SELF-SERVICE LAUNDERETTE, OPEN 24
-                        HOURS A DAY, 7 DAYS A WEEK, 365 DAYS A YEAR!
+                        Eurowash 24 7 365 is a clean, safe and friendly self-service launderette
+                        monitored virtually by CCTV and in person including night patrols
                     </p>
-                    <!-- <p class="text-blue-600 italic mt-2">
+                    <!-- <p class="text-[color:var(--color-eurowash)] italic mt-2">
                         Established in the 1960s
                     </p>
 
                     <div class="mt-6 space-y-4">
-                        <p class="text-lg text-blue-600 font-medium">
+                        <p class="text-lg text-[color:var(--color-eurowash)] font-medium">
                             The current owners have been providing modern-day
                             machines for your washing and drying needs since
                             1996.
@@ -75,7 +75,7 @@
                     >
                         <a
                             href="#services"
-                            class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition flex items-center"
+                            class="bg-[color:var(--color-eurowash)] hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg shadow-md transition flex items-center"
                         >
                             Our Services
                             <svg
@@ -93,7 +93,7 @@
                         </a>
                         <a
                             href="#location"
-                            class="bg-white border-2 border-blue-600 hover:bg-blue-50 text-blue-600 font-bold py-3 px-6 rounded-lg shadow-md transition flex items-center"
+                            class="bg-white border-2 border-[color:var(--color-eurowash)] hover:bg-blue-50 text-[color:var(--color-eurowash)] font-bold py-3 px-6 rounded-lg shadow-md transition flex items-center"
                         >
                             <svg
                                 class="h-5 w-5 mr-2"
@@ -135,11 +135,11 @@
     <section class="py-16 md:py-24 bg-white" id="services">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-3">
+                <h2 class="text-3xl md:text-4xl font-bold text-[color:var(--color-eurowash)] mb-3">
                     Our Services
                 </h2>
                 <div
-                    class="w-24 h-1 bg-blue-500 mx-auto rounded-full mb-6"
+                    class="w-24 h-1 bg-[color:var(--color-eurowash)] mx-auto rounded-full mb-6"
                 ></div>
                 <p class="text-gray-600 max-w-2xl mx-auto">
                     Eurowash 24 7 365 is a clean, safe and friendly self-service
@@ -160,15 +160,14 @@
                         />
                     </div>
                     <div class="p-6 md:p-8 border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-4">
                             24-7-365 Self-Service Laundry
                         </h3>
                         <ul class="space-y-3 text-gray-700">
                             @foreach([ 'Easy to operate Washing Machines and
                             Tumble Dryers', 'Machine and Dryers accept coins,
                             card any payments from contactless devices',
-                            'Washing Machines range form handling up to 14kg,
-                            20kg and 22kg loads', 'Tumble Dryers range from
+                            'Washing Machines range from 9kg to 20kg loads.', 'Tumble Dryers range from
                             handling up to 13.5kg and 20kg', 'Machines are
                             therefore suitable for all types of laundry; whether
                             it be commercial or domestic', "Machines are set to
@@ -178,7 +177,7 @@
                             read whilst you wait!' ] as $feature)
                             <li class="flex items-start gap-2">
                                 <svg
-                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    class="h-5 w-5 text-[color:var(--color-eurowash)] mt-1 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                 >
@@ -207,13 +206,13 @@
                         />
                     </div>
                     <div class="p-6 md:p-8 border-t-4 border-blue-600">
-                        <h3 class="text-2xl font-bold text-blue-800 mb-4">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-4">
                             24-Hour Service Washes
                         </h3>
                         <ul class="space-y-3 text-gray-700">
                             <li class="flex items-start gap-2">
                                 <svg
-                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    class="h-5 w-5 text-[color:var(--color-eurowash)] mt-1 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                 >
@@ -230,7 +229,7 @@
                             </li>
                             <li class="flex items-start gap-2">
                                 <svg
-                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    class="h-5 w-5 text-[color:var(--color-eurowash)] mt-1 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                 >
@@ -245,7 +244,7 @@
                                     our
                                     <a
                                         href="{{ route('eurowash.lockers') }}"
-                                        class="text-blue-600 hover:text-blue-800 font-medium"
+                                        class="text-[color:var(--color-eurowash)] hover:text-[color:var(--color-eurowash)] font-medium"
                                     >
                                         24-7 Smart Laundry Lockers (please click
                                         to book)
@@ -254,7 +253,7 @@
                             </li>
                             <li class="flex items-start gap-2">
                                 <svg
-                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    class="h-5 w-5 text-[color:var(--color-eurowash)] mt-1 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                 >
@@ -273,7 +272,7 @@
                             </li>
                             <li class="flex items-start gap-2">
                                 <svg
-                                    class="h-5 w-5 text-blue-600 mt-1 flex-shrink-0"
+                                    class="h-5 w-5 text-[color:var(--color-eurowash)] mt-1 flex-shrink-0"
                                     fill="currentColor"
                                     viewBox="0 0 20 20"
                                 >
@@ -297,7 +296,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-16">
                 <h2
-                    class="text-4xl font-bold text-blue-800 inline-block underline"
+                    class="text-4xl font-bold text-[color:var(--color-eurowash)] inline-block underline"
                 >
                     Why Choose Eurowash 24 7 365
                 </h2>
@@ -312,7 +311,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -326,12 +325,12 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
-                        Open 24/7 365 Days
+                        Open 24 7 365 Days
                     </h3>
                     <p class="text-gray-700 text-center">
-                        Always open, even on bank holidays and RFU event days
+                        Always open, even on bank holidays but on RFU event days hours may vary
                     </p>
                 </div>
 
@@ -343,7 +342,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -357,7 +356,7 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
                         Modern Equipment
                     </h3>
@@ -374,7 +373,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
@@ -388,7 +387,7 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
                         Cash and Cashless Payment
                     </h3>
@@ -407,7 +406,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                         >
@@ -419,7 +418,7 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
                         Vending Machines
                     </h3>
@@ -436,7 +435,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                         >
@@ -448,7 +447,7 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
                         Clean & Friendly
                     </h3>
@@ -467,7 +466,7 @@
                         class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6"
                     >
                         <svg
-                            class="h-8 w-8 text-blue-600"
+                            class="h-8 w-8 text-[color:var(--color-eurowash)]"
                             fill="currentColor"
                             viewBox="0 0 20 20"
                         >
@@ -479,7 +478,7 @@
                         </svg>
                     </div>
                     <h3
-                        class="text-xl font-bold text-blue-800 text-center mb-2"
+                        class="text-xl font-bold text-[color:var(--color-eurowash)] text-center mb-2"
                     >
                         Inspiring Quotes & Books
                     </h3>
@@ -518,10 +517,10 @@
     <section id="about" class="py-16 md:py-24 bg-white">
         <div class="container mx-auto px-4 max-w-6xl">
             <div class="text-center mb-12">
-                <h2 class="text-3xl md:text-4xl font-bold text-blue-600 mb-3">
+                <h2 class="text-3xl md:text-4xl font-bold text-[color:var(--color-eurowash)] mb-3">
                     About Us
                 </h2>
-                <div class="w-24 h-1 bg-blue-500 mx-auto rounded-full"></div>
+                <div class="w-24 h-1 bg-[color:var(--color-eurowash)] mx-auto rounded-full"></div>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
@@ -532,33 +531,23 @@
                     <div class="space-y-6 text-gray-700">
                         <div>
                             <h3
-                                class="text-xl font-semibold text-blue-700 mb-3"
+                                class="text-xl font-semibold text-[color:var(--color-eurowash)] mb-3"
                             >
                                 Our Heritage
                             </h3>
                             <p class="leading-relaxed">
-                                Eurowash was established in the 1960s and the
-                                current owners have been providing gas, water,
-                                and electric for the local community's washing
-                                and drying needs since 1996.
+                                Eurowash was established in the 1960s and is currently a local established family owned business
                             </p>
                         </div>
 
                         <div>
                             <h3
-                                class="text-xl font-semibold text-blue-700 mb-3"
+                                class="text-xl font-semibold text-[color:var(--color-eurowash)] mb-3"
                             >
                                 Modern Innovation
                             </h3>
                             <p class="leading-relaxed">
-                                Eurowash 24 7 365 is the first 24-hour
-                                self-service launderette in South West London.
-                                The owners have embraced modern technology to
-                                serve your needs — upgrading machines for higher
-                                capacity and better quality, supporting
-                                contactless/card payments, and extending opening
-                                hours so you can wash and dry any time, day or
-                                night.
+Eurowash 24 7 365 is the first and ONLY 24-hour self-service launderette in South West London. The owners have embraced modern technology to serve your needs — upgrading machines for higher capacity and better quality, supporting contactless/card payments, and extending opening hours so you can wash and dry any time, day or night making full use of AI including use of Eurobott and modern technology
                             </p>
                         </div>
                     </div>
@@ -593,7 +582,7 @@
     <section class="py-20 bg-gray-50" id="location">
         <div class="container mx-auto px-4">
             <h2
-                class="text-4xl font-bold text-center text-blue-800 underline decoration-2 mb-12"
+                class="text-4xl font-bold text-center text-[color:var(--color-eurowash)] underline decoration-2 mb-12"
             >
                 Find Us
             </h2>
@@ -606,7 +595,7 @@
                     class="bg-white p-10 rounded-3xl shadow-md space-y-6 text-gray-700"
                 >
                     <div>
-                        <h3 class="text-2xl font-bold text-blue-800 mb-2">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-2">
                             Address
                         </h3>
                         <p>
@@ -618,7 +607,7 @@
                     </div>
 
                     <div>
-                        <h3 class="text-2xl font-bold text-blue-800 mb-2">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-2">
                             Location
                         </h3>
                         <p>
@@ -633,7 +622,7 @@
                     </div>
 
                     <div>
-                        <h3 class="text-2xl font-bold text-blue-800 mb-2">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-2">
                             Parking
                         </h3>
                         <p>
@@ -646,20 +635,20 @@
                     </div>
 
                     <div>
-                        <h3 class="text-2xl font-bold text-blue-800 mb-2">
+                        <h3 class="text-2xl font-bold text-[color:var(--color-eurowash)] mb-2">
                             Contact Us
                         </h3>
                         <p class="space-y-2">
                             <strong>Phone / WhatsApp:</strong>
                             <a
                                 href="tel:02080793035"
-                                class="text-blue-700 font-semibold"
+                                class="text-[color:var(--color-eurowash)] font-semibold"
                                 >02080793035</a
                             ><br />
                             <strong>Email:</strong>
                             <a
                                 href="mailto:eurowashcentre@gmail.com"
-                                class="text-blue-700 font-semibold"
+                                class="text-[color:var(--color-eurowash)] font-semibold"
                                 >eurowashcentre@gmail.com</a
                             ><br />
                             <strong>Opening Hours:</strong> Open 24 hours a day,
@@ -689,7 +678,7 @@
         <div class="container mx-auto px-4">
             <div class="text-center mb-12">
                 <h2
-                    class="text-4xl font-bold text-blue-800 relative inline-block underline"
+                    class="text-4xl font-bold text-[color:var(--color-eurowash)] relative inline-block underline"
                 >
                     24-7 Smart Laundry Lockers
                 </h2>
@@ -706,13 +695,13 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--color-eurowash)] text-white font-bold shadow-md"
                             >
                                 1
                             </div>
                         </div>
                         <div class="ml-5">
-                            <h3 class="text-xl font-bold text-blue-800">
+                            <h3 class="text-xl font-bold text-[color:var(--color-eurowash)]">
                                 Book a Locker Online
                             </h3>
                             <p class="mt-2 text-gray-700">
@@ -726,13 +715,13 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--color-eurowash)] text-white font-bold shadow-md"
                             >
                                 2
                             </div>
                         </div>
                         <div class="ml-5">
-                            <h3 class="text-xl font-bold text-blue-800">
+                            <h3 class="text-xl font-bold text-[color:var(--color-eurowash)]">
                                 Drop Off Your Laundry
                             </h3>
                             <p class="mt-2 text-gray-700">
@@ -746,13 +735,13 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--color-eurowash)] text-white font-bold shadow-md"
                             >
                                 3
                             </div>
                         </div>
                         <div class="ml-5">
-                            <h3 class="text-xl font-bold text-blue-800">
+                            <h3 class="text-xl font-bold text-[color:var(--color-eurowash)]">
                                 Eurowash 24 7 365 Laundry Service
                             </h3>
                             <p class="mt-2 text-gray-700">
@@ -766,13 +755,13 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--color-eurowash)] text-white font-bold shadow-md"
                             >
                                 4
                             </div>
                         </div>
                         <div class="ml-5">
-                            <h3 class="text-xl font-bold text-blue-800">
+                            <h3 class="text-xl font-bold text-[color:var(--color-eurowash)]">
                                 Make a Payment
                             </h3>
                             <p class="mt-2 text-gray-700">
@@ -786,13 +775,13 @@
                     <div class="flex items-start">
                         <div class="flex-shrink-0">
                             <div
-                                class="flex items-center justify-center w-12 h-12 rounded-full bg-blue-600 text-white font-bold shadow-md"
+                                class="flex items-center justify-center w-12 h-12 rounded-full bg-[color:var(--color-eurowash)] text-white font-bold shadow-md"
                             >
                                 5
                             </div>
                         </div>
                         <div class="ml-5">
-                            <h3 class="text-xl font-bold text-blue-800">
+                            <h3 class="text-xl font-bold text-[color:var(--color-eurowash)]">
                                 Collect Your Laundry
                             </h3>
                             <p class="mt-2 text-gray-700">
@@ -816,7 +805,7 @@
         <div class="flex justify-center mt-10">
             <a
                 href = {{ route('eurowash.lockers') }}
-                class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md "
+                class="bg-[color:var(--color-eurowash)] text-white font-bold py-3 px-8 rounded-lg shadow-md "
             >
                 Book Now
             </a>

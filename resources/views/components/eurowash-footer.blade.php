@@ -1,14 +1,16 @@
-<footer class="bg-blue-800 text-white py-16 text-sm leading-relaxed">
+<footer
+    class="bg-[color:var(--color-eurowash)] text-white py-16 text-sm leading-relaxed"
+>
     <div class="container mx-auto px-4">
-        <div class="grid md:grid-cols-4 gap-12">
+        <div class="grid md:grid-cols-4 gap-10 md:gap-12">
             <!-- Company Info -->
-            <div class="flex flex-col">
+            <div>
                 <h3
-                    class="text-2xl font-bold mb-4 border-b border-blue-600 pb-2 inline-block tracking-wide"
+                    class="text-2xl font-bold border-b pb-2 border-[color:var(--color-eurowash)] mb-4 tracking-wide"
                 >
                     EUROWASH 24 7 365
                 </h3>
-                <p class="mb-3 text-blue-100">Open 24/7/365 Since 1996</p>
+                <p class="mb-2 text-blue-100">Open 24 7 365 Since 1996</p>
                 <p class="text-blue-100">
                     The first 24-hour self-service launderette in South West
                     London
@@ -18,15 +20,18 @@
             <!-- Quick Links -->
             <div>
                 <h3
-                    class="text-xl font-bold mb-6 border-b border-blue-600 pb-2 inline-block tracking-wide"
+                    class="text-xl font-bold border-b pb-2 border-[color:var(--color-eurowash)] mb-4 tracking-wide"
                 >
                     Quick Links
                 </h3>
                 <ul class="space-y-3">
+                    @foreach (['features' => 'Features', 'services' =>
+                    'Services', 'location' => 'Location', 'about' => 'About Us']
+                    as $id => $text)
                     <li>
                         <a
-                            href="#features"
-                            class="text-blue-100 hover:text-white transition duration-300 flex items-center"
+                            href="#{{ $id }}"
+                            class="text-blue-100 hover:text-white flex items-center transition duration-300"
                         >
                             <svg
                                 class="h-4 w-4 mr-2"
@@ -41,85 +46,25 @@
                                     d="M9 5l7 7-7 7"
                                 />
                             </svg>
-                            Features
+                            {{ $text }}
                         </a>
                     </li>
-                    <li>
-                        <a
-                            href="#services"
-                            class="text-blue-100 hover:text-white transition duration-300 flex items-center"
-                        >
-                            <svg
-                                class="h-4 w-4 mr-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9 5l7 7-7 7"
-                                />
-                            </svg>
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#location"
-                            class="text-blue-100 hover:text-white transition duration-300 flex items-center"
-                        >
-                            <svg
-                                class="h-4 w-4 mr-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9 5l7 7-7 7"
-                                />
-                            </svg>
-                            Location
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#about"
-                            class="text-blue-100 hover:text-white transition duration-300 flex items-center"
-                        >
-                            <svg
-                                class="h-4 w-4 mr-2"
-                                fill="none"
-                                viewBox="0 0 24 24"
-                                stroke="currentColor"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M9 5l7 7-7 7"
-                                />
-                            </svg>
-                            About Us
-                        </a>
-                    </li>
+                    @endforeach
                 </ul>
             </div>
 
             <!-- Contact Us -->
             <div>
                 <h3
-                    class="text-xl font-bold mb-6 border-b border-blue-600 pb-2 inline-block tracking-wide"
+                    class="text-xl font-bold border-b pb-2 border-[color:var(--color-eurowash)] mb-4 tracking-wide"
                 >
                     Contact Us
                 </h3>
                 <ul class="space-y-4">
                     <li class="flex items-center">
-                        <div class="bg-blue-700 p-2 rounded-full mr-3">
+                        <div
+                            class="p-2 rounded-full mr-3 bg-[color:var(--color-eurowash)]"
+                        >
                             <svg
                                 class="h-5 w-5"
                                 fill="none"
@@ -136,13 +81,14 @@
                         </div>
                         <a
                             href="tel:02080793035"
-                            class="text-blue-100 hover:text-white transition duration-300"
+                            class="text-blue-100 hover:text-white transition"
+                            >0208 079 3035</a
                         >
-                            0208 079 3035
-                        </a>
                     </li>
                     <li class="flex items-center">
-                        <div class="bg-blue-700 p-2 rounded-full mr-3">
+                        <div
+                            class="p-2 rounded-full mr-3 bg-[color:var(--color-eurowash)]"
+                        >
                             <svg
                                 class="h-5 w-5"
                                 fill="none"
@@ -159,13 +105,14 @@
                         </div>
                         <a
                             href="mailto:eurowashcentre@gmail.com"
-                            class="text-blue-100 hover:text-white transition duration-300"
+                            class="text-blue-100 hover:text-white transition"
+                            >eurowashcentre@gmail.com</a
                         >
-                            eurowashcentre@gmail.com
-                        </a>
                     </li>
                     <li class="flex items-start">
-                        <div class="bg-blue-700 p-2 rounded-full mr-3 mt-1">
+                        <div
+                            class="p-2 rounded-full mr-3 mt-1 bg-[color:var(--color-eurowash)]"
+                        >
                             <svg
                                 class="h-5 w-5"
                                 fill="none"
@@ -187,9 +134,7 @@
                             </svg>
                         </div>
                         <address class="not-italic text-blue-100">
-                            99 Whitton Road<br />
-                            Twickenham<br />
-                            TW1 1BZ
+                            99 Whitton Road<br />Twickenham<br />TW1 1BZ
                         </address>
                     </li>
                 </ul>
@@ -198,11 +143,13 @@
             <!-- Opening Hours -->
             <div>
                 <h3
-                    class="text-xl font-bold mb-6 border-b border-blue-600 pb-2 inline-block tracking-wide"
+                    class="text-xl font-bold border-b pb-2 border-[color:var(--color-eurowash)] mb-4 tracking-wide"
                 >
                     Opening Hours
                 </h3>
-                <div class="bg-blue-700 rounded-lg p-4 shadow-lg">
+                <div
+                    class="bg-[color:var(--color-eurowash)] rounded-xl p-4 shadow-lg"
+                >
                     <div class="flex items-center mb-4">
                         <svg
                             class="h-6 w-6 mr-2"
@@ -219,16 +166,16 @@
                         </svg>
                         <span class="font-semibold">Always Open</span>
                     </div>
-                    <p class="text-blue-100">
-                        Open 24 hours a day,<br />
-                        7 days a week,<br />
-                        365 days a year.
+                    <p class="text-blue-100 leading-snug">
+                        Open 24 hours a day,<br />7 days a week,<br />365 days a
+                        year.
                     </p>
                     <div class="mt-4 text-center">
                         <span
-                            class="bg-blue-600 px-3 py-1 rounded-full text-sm font-medium"
-                            >We Never Close!</span
+                            class="bg-[color:var(--color-eurowash)] px-3 py-1 rounded-full text-sm font-medium"
                         >
+                            We Never Close!
+                        </span>
                     </div>
                 </div>
             </div>
@@ -236,7 +183,7 @@
 
         <!-- Statutory Info -->
         <div
-            class="mt-12 border-t border-blue-700 pt-6 text-blue-200 text-center space-y-2 max-w-4xl mx-auto"
+            class="mt-12 pt-6 border-t border-[color:var(--color-eurowash)] text-center text-blue-200 space-y-2 max-w-4xl mx-auto"
         >
             <h4 class="text-base font-semibold text-white tracking-wide">
                 STATUTORY INFORMATION
@@ -252,7 +199,9 @@
         </div>
 
         <!-- Bottom Links -->
-        <div class="border-t border-blue-700 mt-12 pt-6 text-center">
+        <div
+            class="mt-12 pt-6 border-t border-[color:var(--color-eurowash)] text-center"
+        >
             <div class="mb-4">
                 <a
                     href="#privacy"
