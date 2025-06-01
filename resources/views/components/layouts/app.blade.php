@@ -158,6 +158,11 @@
             <elevenlabs-convai
                 agent-id="agent_01jw1x0zt3fjhrkjfnt6j1be7e"
             ></elevenlabs-convai>
+            <script
+                src="https://unpkg.com/@elevenlabs/convai-widget-embed"
+                async
+                type="text/javascript"
+            ></script>
         </main>
 
         <!-- Footer -->
