@@ -815,12 +815,10 @@
         </div>
         <div class="flex justify-center mt-10">
             <a
-                href="#"
-                class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md cursor-not-allowed opacity-50"
-                disabled
+                href = {{ route('eurowash.lockers') }}
+                class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md "
             >
-                🚨 Launching Our Smart Locker Service on June 1st! 🎉 All orders
-                on that day will get 25% off! 🚨
+                Book Now
             </a>
         </div>
     </section>

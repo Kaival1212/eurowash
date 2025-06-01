@@ -2,8 +2,7 @@
     <!-- Announcement Bar -->
     <div class="bg-blue-600 text-white text-center py-2 text-sm sm:text-base">
         <span
-            >🚨 Launching Our Smart Locker Service on June 1st! 🎉 All orders on
-            that day will get 25% off! 🚨</span
+            >🚨 Our Smart Locker Service is Live! 🎉 🚨</span
         >
     </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

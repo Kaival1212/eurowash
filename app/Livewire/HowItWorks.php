@@ -150,11 +150,11 @@ class HowItWorks extends Component
                 </div>
                 <div class="flex justify-center mt-10">
                     <a
-                        href="#"
-                        class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md cursor-not-allowed opacity-50"
+                        href= {{ route('eurowash.lockers') }}
+                        class="bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md "
                         disabled
                     >
-                        🚨 Launching Our Smart Locker Service on June 1st! 🎉 All orders on that day will get 25% off! 🚨
+                        Book a Locker Now
                     </a>
                 </div>
             </section>
