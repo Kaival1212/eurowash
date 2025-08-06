@@ -89,6 +89,7 @@ class LockerOrders extends Model
                         ]],
                         'mode' => 'payment',
                         'invoice_creation' => ['enabled' => true],
+                        'automatic_tax' => ['enabled' => true],
                         'success_url' => route('user.order', ['orderID' => $order->id]),
                         'cancel_url' => route('user.order', ['orderID' => $order->id]),
                         'metadata' => [
