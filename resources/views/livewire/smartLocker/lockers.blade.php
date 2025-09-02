@@ -4,8 +4,13 @@
     </h1>
 
     <div
-        class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
+        class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8"
     >
+        @if(count($lockers) == 0)
+        <div class="col-span-4 text-center text-gray-500">
+            <p class="text-lg">No lockers available at the moment.</p>
+        </div>
+        @endif
         @foreach($lockers as $locker)
         <div
             class="bg-white border border-blue-100 shadow-sm rounded-2xl overflow-hidden hover:shadow-xl hover:scale-[1.02] transition-all duration-300"

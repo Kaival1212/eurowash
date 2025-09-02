@@ -156,7 +156,7 @@
                         <img
                             src="{{ asset('storage/download.png') }}"
                             alt="Self-Service Laundry Machines"
-                            class="w-full h-full object-cover transform hover:scale-105 transition duration-500"
+                            class="w-full h-full object-fit transform hover:scale-105 transition duration-500"
                         />
                     </div>
                     <div class="p-6 md:p-8 border-t-4 border-blue-600">
