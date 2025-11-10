@@ -59,13 +59,15 @@ class LockerBooking extends Component
         $this->locker->save();
 
 
-
         Mail::to($this->email)->send(new PendingOrder($order , $this->name , $this->locker));
         // mail to the emaployee as well
         $employees = User::where('role', 'employee')->get();
         foreach ($employees as $employee) {
             Mail::to($employee->email)->send(new mailToEmploye($order));
         }
+
+        $order->status = 'confirmed';
+        $order->save();
 
         session()->flash('success', 'Locker booked successfully!');
 
