@@ -48,7 +48,7 @@ class LockerOrders extends Model
 
         static::updated(function ($order): void{
 
-            if ( $order->isDirty('status') && $order->status == 'confirmed' ) {
+            if ( $order->wasChanged('status') && $order->status == 'confirmed' ) {
                 if ($order->email){
                     Mail::to($order->email)->send(new LockerOrderConfirmed(
                         $order,
