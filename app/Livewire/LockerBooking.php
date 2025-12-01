@@ -66,6 +66,7 @@ class LockerBooking extends Component
             Mail::to($employee->email)->send(new mailToEmploye($order));
         }
 
+        usleep(1000000);
         $order->status = 'confirmed';
         $order->save();
 
