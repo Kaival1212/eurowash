@@ -2,6 +2,7 @@
 
 namespace App\Livewire;
 
+use App\Jobs\AutoAccept;
 use App\Mail\mailToEmploye;
 use App\Mail\PendingOrder;
 use App\Models\LockerOrders;
@@ -66,9 +67,7 @@ class LockerBooking extends Component
             Mail::to($employee->email)->send(new mailToEmploye($order));
         }
 
-        usleep(1000000);
-        $order->status = 'confirmed';
-        $order->save();
+        AutoAccept::dispatch($order)->delay(now()->addSeconds(5));
 
         session()->flash('success', 'Locker booked successfully!');
 
