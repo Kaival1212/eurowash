@@ -47,7 +47,7 @@
                 <div class="space-y-4">
                     <h3 class="text-lg font-medium text-gray-900">Sign In</h3>
                     <p class="text-sm text-gray-600">
-                        Access your locker bookings and account information
+                        Access your account information
                     </p>
 
                     <div>

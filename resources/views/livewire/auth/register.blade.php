@@ -47,7 +47,7 @@
                 <div class="space-y-4">
                     <h3 class="text-lg font-medium text-gray-900">Sign Up</h3>
                     <p class="text-sm text-gray-600">
-                        Create an account to start booking lockers
+                        Create an account
                     </p>
 
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">

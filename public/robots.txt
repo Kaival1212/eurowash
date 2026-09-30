@@ -1,2 +1,27 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /settings
+Disallow: /forgot-password
+Disallow: /reset-password
+Disallow: /verify-email
+
+# AI / generative search crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+Sitemap: https://eurowashlaunderette.com/sitemap.xml

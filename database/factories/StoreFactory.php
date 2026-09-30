@@ -26,14 +26,14 @@ class StoreFactory extends Factory
             'state' => 'London',
             'pin' => 'TW1 1BZ',
             'logo' => 'https://eurowash.co.uk/wp-content/uploads/2023/01/cropped-Eurowash-Logo-1.png',
-            'storeImage' => 'https://eurowash.kaival.co.uk/storage/unnamed.jpg',
+            'storeImage' => 'https://eurowash.kaival.co.uk/storage/eurowash-storefront.jpg',
             'status' => 'active',
             'mapsUrl' => 'https://maps.app.goo.gl/GfvqPK7rjGgypdJp8',
 
             // SEO fields
-            'seoTitle' => 'Eurowash | 24/7/365 Launderette in Twickenham | Self-Service & Service Wash',
-            'seoDescription' => 'Open 24/7/365, Eurowash in Twickenham offers self-service, service wash, and 24/7 laundry lockers. Visit 99 Whitton Road TW1 1BZ.',
-            'seoKeyword' => 'laundry, launderette, 24/7 wash, Twickenham laundry, service wash, self-service',
+            'seoTitle' => 'Eurowashs | 24/7/365 Self-Service Launderette in Twickenham',
+            'seoDescription' => 'Open 24/7/365, Eurowash in Twickenham offers self-service laundry and 24/7 laundry lockers. Visit 99 Whitton Road TW1 1BZ.',
+            'seoKeyword' => 'laundry, launderette, 24/7 wash, Twickenham laundry, self-service',
 
             // Optional SEO enhancements
             'canonicalUrl' => 'https://eurowash.kaival.co.uk',

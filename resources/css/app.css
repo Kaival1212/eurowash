@@ -23,7 +23,9 @@
     --color-zinc-900: #171717;
     --color-zinc-950: #0a0a0a;
 
-    --color-eurowash: #061d3d;
+    --color-eurowash: #193CB8;
+    --color-eurowash-dark: #12309a;
+    --color-eurowash-light: #3a5ed6;
 
 
     --color-accent: var(--color-neutral-800);

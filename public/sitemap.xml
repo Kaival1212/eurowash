@@ -1,64 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml"
-        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
-        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
-        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
-    <!-- Home page -->
     <url>
-        <loc>https://eurowashlaunderette.com</loc>
+        <loc>https://eurowashlaunderette.com/</loc>
+        <lastmod>2026-09-30</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <lastmod>2025-05-25</lastmod> <!-- Example last modification date -->
+        <image:image>
+            <image:loc>https://eurowashlaunderette.com/storage/eurowash-storefront.jpg</image:loc>
+            <image:title>Eurowash 24 7 365 storefront on Whitton Road, Twickenham</image:title>
+        </image:image>
     </url>
 
-    <!-- About Us page -->
-    <url>
-        <loc>https://eurowashlaunderette.com/about</loc>
-        <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
-    </url>
-
-    <!-- Contact page -->
-    <url>
-        <loc>https://eurowashlaunderette.com/contact</loc>
-        <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
-    </url>
-
-    <!-- Services page -->
-    <url>
-        <loc>https://eurowashlaunderette.com/services</loc>
-        <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
-    </url>
-
-    <!-- Features page -->
     <url>
         <loc>https://eurowashlaunderette.com/features</loc>
+        <lastmod>2026-09-30</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
     </url>
 
-    <!-- Location page -->
+    <url>
+        <loc>https://eurowashlaunderette.com/services</loc>
+        <lastmod>2026-09-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://eurowashlaunderette.com/storage/washer-jla.jpg</image:loc>
+            <image:title>Eurowash JLA IPSO washing machine</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://eurowashlaunderette.com/storage/washer-w7.jpg</image:loc>
+            <image:title>Eurowash step-by-step guided washer</image:title>
+        </image:image>
+    </url>
+
     <url>
         <loc>https://eurowashlaunderette.com/location</loc>
-        <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
+        <lastmod>2026-09-30</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://eurowashlaunderette.com/storage/eurowash-storefront.jpg</image:loc>
+            <image:title>Eurowash storefront at 99 Whitton Road, Twickenham</image:title>
+        </image:image>
     </url>
 
-    <!-- How It Works page -->
     <url>
-        <loc>https://eurowashlaunderette.com/howitworks</loc>
-        <priority>0.8</priority>
-        <lastmod>2025-05-25</lastmod>
-    </url>
-
-    <!-- Locker Booking page -->
-    <url>
-        <loc>https://eurowashlaunderette.com/store/eurowash/smart-lockers</loc>
+        <loc>https://eurowashlaunderette.com/about</loc>
+        <lastmod>2026-09-30</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.7</priority>
-        <lastmod>2025-05-25</lastmod>
+        <image:image>
+            <image:loc>https://eurowashlaunderette.com/storage/big-bertha.jpg</image:loc>
+            <image:title>Big Bertha giant capacity washer at Eurowash</image:title>
+        </image:image>
     </url>
 
 </urlset>
